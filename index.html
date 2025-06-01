@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lycée de Gamboura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lycée de Gamboura</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#actualites">Actualités</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#espace-eleves">Espace élèves</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="accueil" class="hero">
+            <h2>Bienvenue au Lycée de Gamboura</h2>
+            <p>Un établissement d’excellence pour former les talents de demain.</p>
+        </section>
+
+        <section id="galerie">
+            <h3>Galerie photos</h3>
+            <div class="gallery" id="gallery"></div>
+        </section>
+
+        <section id="actualites">
+            <h3>Actualités</h3>
+            <ul id="news-list"></ul>
+        </section>
+
+        <section id="agenda">
+            <h3>Agenda</h3>
+            <ul id="agenda-list"></ul>
+        </section>
+
+        <section id="blog">
+            <h3>Blog du lycée</h3>
+            <div id="blog-posts"></div>
+        </section>
+
+        <section id="espace-eleves">
+            <h3>Espace élèves</h3>
+            <form id="loginForm">
+                <label for="login">Identifiant :</label>
+                <input type="text" id="login" required>
+                <label for="pwd">Mot de passe :</label>
+                <input type="password" id="pwd" required>
+                <button type="submit">Connexion</button>
+                <p id="loginMsg"></p>
+            </form>
+            <div id="espacePrive" style="display:none;">
+                <p>Bienvenue dans l’espace privé réservé aux élèves !</p>
+                <button onclick="logout()">Déconnexion</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3>Contactez-nous</h3>
+            <form id="contactForm">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Envoyer</button>
+                <p id="formMessage"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Lycée de Gamboura | contact@lycee-gamboura.edu |<b> +237 694 957 880 </b> </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
